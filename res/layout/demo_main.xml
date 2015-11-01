@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/FrameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="150dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/hint_text"
+            android:text="\n   AdsProphet is a new mobile ads library\n   that can find long delay networking \n   operations and take advantage of those \n   &quot;dead time&quot; by playing profitable \n   full-screen ads. This demo app simulates\n   a bad networking condition and shows \n   how AdsProphet displays full-screen ads \n   for long delay networing operations. " />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:text="AdsProphet"
+            android:textColor="#808080"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/withAdBtn"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/buttonthree"
+            android:text="Enable\nAdsProphet"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFCC00" />
+
+        <Button
+            android:id="@+id/withoutAdBtn"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/buttonthree"
+            android:text="Disable\nAdsProphet"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#CC0000"
+            android:textColorLink="#CC0000" />
+    </LinearLayout>
+
+</LinearLayout>
