@@ -173,7 +173,7 @@ public class PredictionClient {
 					}
 					int predict_value = serverObject.getInt("predict");
 					webViewClient.curWebInfo.predict_value = predict_value;
-				    webViewClient.prophetInterface.onPredictFinished();
+				    webViewClient.prophetInterface.onPredictFinished(predict_value);
 					
 					String predictHistoryString = serverObject.getString("delay");
 					if(predictHistoryString.equals("None"))

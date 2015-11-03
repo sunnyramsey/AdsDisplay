@@ -29,7 +29,6 @@ public class WebInfo {
 	public long content_len;
 	public ArrayList<String> rttList;
 	public ArrayList<String> historyList;
-	public ArrayList<CellIDInfo> cellList;
 	
 	public WebInfo(String url)
 	{
@@ -39,7 +38,6 @@ public class WebInfo {
 		onload_delay = 0;
 		rttList = new ArrayList<String>();
 		historyList = new ArrayList<String>();
-		cellList = new ArrayList<CellIDInfo>();
 		predict_value = 0;
 		
 	}

@@ -298,9 +298,9 @@ public class MainActivity extends Activity {
 		ProphetWebViewClient.ProphetInterface prophetInterface = new ProphetWebViewClient.ProphetInterface() {
 			
 			@Override
-			public void onPredictFinished() {
+			public void onPredictFinished(int predict_time) {
 				// TODO Auto-generated method stub
-				Log.e("Prophet:interface","onPredictFinished");
+				Log.e("Prophet:interface","onPredictFinished:"+predict_time);
 				MainActivity.this.runOnUiThread(new Runnable() {
 					
 					@Override
@@ -360,6 +360,15 @@ public class MainActivity extends Activity {
 						noAdProgressToast.disappear();
 					}
 				});
+				
+			}
+
+			@Override
+			public void onVisitedTimeout() {
+				// TODO Auto-generated method stub
+				webView.setVisibility(View.VISIBLE);
+				adaptiveAd.endAd();
+				noAdProgressToast.disappear();
 				
 			}
 		};
