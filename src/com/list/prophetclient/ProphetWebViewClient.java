@@ -85,9 +85,9 @@ public class ProphetWebViewClient extends WebViewClient {
 				@Override
 				public void run() {
 					// TODO Auto-generated method stub
-					prophetInterface.onVisitedTimeout();
 					if(curDelayRequestInfo.isSend == false)
 					{
+						prophetInterface.onVisitedTimeout();
 						curDelayRequestInfo.delay = 18000;
 						curDelayRequestInfo.sendDelayInfo();	
 					}

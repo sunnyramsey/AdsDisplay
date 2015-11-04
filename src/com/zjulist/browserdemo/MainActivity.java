@@ -366,9 +366,16 @@ public class MainActivity extends Activity {
 			@Override
 			public void onVisitedTimeout() {
 				// TODO Auto-generated method stub
-				webView.setVisibility(View.VISIBLE);
-				adaptiveAd.endAd();
-				noAdProgressToast.disappear();
+				MainActivity.this.runOnUiThread(new Runnable() {
+					
+					@Override
+					public void run() {
+						// TODO Auto-generated method stub
+						webView.setVisibility(View.VISIBLE);
+						adaptiveAd.endAd();
+						noAdProgressToast.disappear();
+					}
+				});
 				
 			}
 		};
