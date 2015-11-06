@@ -198,6 +198,7 @@ public class AdaptiveAd {
 			
 			if(showFlag)
 				showFlag=false;
+			toastTimer.disappear();
 			loadAd();
 		
 			super.onAdClosed();
